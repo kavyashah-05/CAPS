@@ -60,6 +60,48 @@ npm -v
 
 Both commands should display installed version numbers. If either command fails, install or repair the relevant installation before proceeding.
 
+## Backend Setup
+
+### 1. Install Dependencies
+
+From the project root, run:
+
+```bash
+npm install
+```
+
+### 2. Start the Backend
+
+For normal execution:
+
+```bash
+npm start
+```
+
+For development with automatic restarts:
+
+```bash
+npm run dev
+```
+
+### 3. Test the API
+
+Open the following URLs in a browser while the server is running:
+
+- `http://localhost:3000/` — API welcome message.
+- `http://localhost:3000/api/health` — API health-check response.
+
+### 4. Stop the Server
+
+Press `Ctrl + C` in the terminal running the server.
+
+### 5. Installed Dependencies
+
+- Express.js — handles HTTP requests and API routes.
+- Nodemon — automatically restarts the server during development.
+
+Nodemon is a development dependency and is not required to run the application using `npm start`.
+
 ## 6. Environment Variables and Secrets
 
 Sensitive configuration values must be stored in a local `.env` file.
@@ -86,4 +128,3 @@ Sensitive configuration values must be stored in a local `.env` file.
 - Development environment setup guide added.
 - Backend dependencies and application structure are not yet configured.
 
-This guide will be updated as the project configuration and development workflow evolve.
